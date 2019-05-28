@@ -1,5 +1,5 @@
 'use strict';
-
+// Jeremy Keith (adactio)
 // Licensed under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 // http://creativecommons.org/publicdomain/zero/1.0/
 
@@ -100,7 +100,7 @@
                     .catch(function () {
                         // If the request is for an image, show an offline placeholder
                         if (request.headers.get('Accept').indexOf('image') !== -1) {
-                            return new Response('<svg width="400" height="300" role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Image Offline</title><g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/><text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">offline</tspan></text></g></svg>', {
+                            return new Response('<svg width="400" height="300" role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Image Offline</title><g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/><text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="42" font-weight="bold"><tspan x="93" y="172">Image offline</tspan></text></g></svg>', {
                                 headers: {
                                     'Content-Type': 'image/svg+xml'
                                 }
