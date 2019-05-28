@@ -18,7 +18,7 @@
                     '/css/site.css',
                     '/lib/jquery/dist/jquery.js',
                     '/lib/bootstrap/dist/js/bootstrap.bundle.js',
-                    '/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0',
+                    '/js/site.js',
                     '/',
                     '/offline.html'
                 ]);
